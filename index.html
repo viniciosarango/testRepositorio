@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica PHP</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+</head>
+<body>
+    <h1>Pago empleados Final</h1>
+    
+    <form action="procesar.php" method="post" class="form">
+        <table>
+            <tr>
+                <td> <strong>Nombre de empleado:</strong> </td>
+                <td><input type="text" name="empleado"></td>
+            </tr>
+
+            <tr>
+                <td> <strong>Horas trabajadas:</strong> </td>
+                <td><input type="text" name="horas"></td>
+            </tr>
+
+            <tr>
+                <td> <strong>Tarifas por hora:</strong> </td>
+                <td><input type="text" name="tarifa"></td>
+            </tr>
+            <tr>
+                <td> <strong>Tipo de Trabajador:</strong> </td>
+                <td>
+                    <select name="tipo" id="">
+                            <option value="Jefe">Jefe</option>
+                            <option value="Administrativo">Administrativo</option>
+                            <option value="Operador">Operador</option>
+
+                </select>
+            </td>
+            </tr>
+            
+            <tr>
+                <td> </td>
+                <td><input type="submit" value="Calcular"></td>
+            </tr>
+
+
+        </table>
+    </form>
+</body>
+</html>
